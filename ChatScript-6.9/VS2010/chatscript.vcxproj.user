@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerWorkingDirectory>..\BINARIES</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>..\BINARIES\chatscript.exe </LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>xpguser="hostaddr = 127.0.0.1 port = 5432 user = postgres password = 1993egop " treetagger="language=english.par tags=englishtags.txt"  xlogin=test xsource=private/KORA/TESTS/regress-qabots.tst edncrypt=http://internal-internal-elb-qabots-676703512.us-east-1.elb.amazonaws.com:8000/_api/users/u-8b02518d-c148-5d45-936b-491d39ced70c/datavalues/encryptedtokens  dedcrypt=http://internal-internal-elb-qabots-676703512.us-east-1.elb.amazonaws.com:8000/_api/users/u-8b02518d-c148-5d45-936b-491d39ced70c/datavalues/decryptedtokens  " xemongo="mongodb://localhost:27017 ChatScript topic:InputOutput log:Logs ltm:LTM" xmongo="mongodb://10.0.12.80:27017 ChatScript Logo"</LocalDebuggerCommandArguments>
+    <ShowAllFiles>true</ShowAllFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerWorkingDirectory>..\BINARIES</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>..\BINARIES\chatscript.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>
+    </LocalDebuggerCommandArguments>
+  </PropertyGroup>
+</Project>

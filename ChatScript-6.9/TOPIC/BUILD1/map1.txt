@@ -1,0 +1,61 @@
+﻿file: C:/ChatScript/RAWDATA/HARRY/childhood.top 0
+    topic: ~childhood 2
+file: C:/ChatScript/RAWDATA/HARRY/introductions.top 0
+    topic: ~introductions 2
+file: C:/ChatScript/RAWDATA/HARRY/keywordless.top 0
+    topic: ~keywordless 4
+file: C:/ChatScript/RAWDATA/HARRY/simplecontrol.top 0
+    macro: ^harry 2
+    topic: ~control 16
+        if-1:  36
+        if-2:  38
+        if-3:  43
+        if-4:  45
+        loop-1:  57
+        if-5:  57
+        if-6:  60
+        if-7:  68
+        if-8:  74
+        if-9:  80
+        if-10:  82
+        loop-2:  94
+        if-11:  94
+        if-12:  95
+        if-13:  97
+        loop-3:  109
+        if-14:  109
+        if-15:  111
+    topic: ~xpostprocess 118
+        loop-1:  121
+        if-1:  129
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_because.top 0
+    topic: ~quibble_because 1
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_can.top 0
+    topic: ~quibble_will 2
+    topic: ~quibble_can 9
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_do.top 0
+    topic: ~quibble_do 1
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_how.top 0
+    topic: ~quibble_howmuch 1
+    topic: ~quibble_how 36
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_misc.top 0
+    topic: ~quibble_misc 3
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_not.top 0
+    topic: ~quibble_not 1
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_or.top 0
+    topic: ~quibble_or 1
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_what.top 0
+    topic: ~quibble_what 1
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_when.top 0
+    topic: ~quibble_when 2
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_where.top 0
+    topic: ~quibble_where 1
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_who.top 0
+    topic: ~quibble_who 1
+file: C:/ChatScript/RAWDATA/QUIBBLE/eliza_why.top 0
+    topic: ~quibble_why 1
+file: C:/ChatScript/RAWDATA/QUIBBLE/honest.top 0
+    topic: ~intent 3
+    topic: ~honest_response 141
+file: C:/ChatScript/RAWDATA/QUIBBLE/quibble.top 0
+    topic: ~quibble_all 1

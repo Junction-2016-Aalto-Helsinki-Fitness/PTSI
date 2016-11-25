@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="chatscript">ChatScript</h1>
+<p>Natural Language tool/dialog manager</p>
+<p><a href="https://github.com/bwilcox-1234/ChatScript/blob/master/WIKI/README.md">ChatScript Wiki (user guides, tutorials, papers)</a></p>
+<p>ChatScript is the next generation chatbot engine that has won the Loebner's 4 times and is the basis for natural language company for a variety of tech startups.</p>
+<p>See BrilligUnderstanding.com for our home website.</p>
+<h1 id="basic-features">Basic Features</h1>
+<p>Powerful pattern matching aimed at detecting meaning.</p>
+<p>Simple rule layout combined with C-style general scripting.</p>
+<p>Built-in WordNet dictionary for ontology and spell-checking.</p>
+<p>Extensive extensible ontology of nouns, verbs, adjectives, adverbs.</p>
+<p>Data as fact triples enables inferencing.</p>
+<p>Rules can examine and alter engine and script behavior.</p>
+<p>Planner capabilities allow a bot to act in real/virtual worlds.</p>
+<p>Remembers user interactions across conversations.</p>
+<p>Document mode allows you to scan documents for content.</p>
+<p>Ability to control local machines via popen.</p>
+<p>Ability to read structured JSON data from websites.</p>
+<p>Postgres and Mongo support for big data or large-user-volume chatbots.</p>
+<h1 id="os-features">OS Features</h1>
+<p>Runs on Windows or Linux or Mac or iOS or Android</p>
+<p>Fast server performance supports a thousand simultaneous users.</p>
+<p>Multiple bots can cohabit on the same server.</p>
+<h1 id="support-features">Support Features</h1>
+<p>Mature technology in use by various parties around the world.</p>
+<p>Integrated tools to support maintaining and testing large systems.</p>
+<p>UTF8 support allows scripts written in any language</p>
+<p>User support forum on Chatbots.org</p>
+<h1 id="how-to-install">How to install</h1>
+<p>Take this project and put it into some directory on your machine (typically we call the directory ChatScript, but you can name it whatever). That takes care of installation.</p>
+<h1 id="how-to-run-locally">How to run locally</h1>
+<p>Go to the BINARIES directory and type <code>ChatScript</code> if you are on Windows, or type <code>./LinuxChatScript64 local</code> if you are on Linux. This will cause ChatScript to load and ask you for a username. Enter whatever you want. You are then talking to the default demo bot <code>Harry</code>.</p>
+<h1 id="how-to-run-as-a-server">How to run as a server</h1>
+<p>Go to the BINARIES directory and type <code>ChatScript port=1024</code> if you are on Windows, or type <code>./LinuxChatScript64</code> if you are on Linux. This will cause ChatScript to load as a server. But you also need a client. You can run a separate command window and go to the BINARIES directory and type <code>ChatScript client=localhost:1024</code> if you are on Windows, or type <code>./LinuxChatScript64 client=localhost:1024</code> if you are on Linux. This will cause ChatScript to load as a client and you can talk to the server.</p>
+<h1 id="how-to-compile-the-engine.">How to compile the engine.</h1>
+<p>On windows if you have Visual Studio installed, launch VS2010/chatscript.sln or VS2015/chatscript.sln and do a build. The result will go in the BINARIES directory.</p>
+<p>On Linux, go stand in the SRC directory and type <code>make server</code> (assuming you have make and g++ installed). This creates BINARIES/ChatScript, which can run as a server or locally. There are other make choices for installing PostGres or Mongo.</p>
+<h1 id="how-to-compile-a-bot">how to compile a bot</h1>
+<p>Run ChatScript locally. From the command prompt, type ':build Harry' or whatever other preinstalled bot exists. If you have revised basic data, you can first do ':build 0' .</p>
+</body>
+</html>
