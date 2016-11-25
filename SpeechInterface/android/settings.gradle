@@ -1,0 +1,3 @@
+rootProject.name = 'SpeechInterface'
+
+include ':app'
