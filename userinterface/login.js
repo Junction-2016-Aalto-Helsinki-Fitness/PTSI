@@ -4,40 +4,38 @@ import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  TextInput,
+  Button
 } from 'react-native';
 
 
-export default class login extends Component {
-	render() {
-	return (
+export default class signup extends Component {
+    constructor(props){
+        super(props);
+        this.state = {text1 : '', text2 : ''};
+    }
+    
+    render() {
+    return (
       <Image
         source={require('./img/background.jpg')}
         style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      
       <View style={{padding: 10}}>
         <TextInput
-          style={{height: 40}}
-          placeholder="Type here to translate!"
-          onChangeText={(text) => this.setState({text})}
-        />
-        <Text style={{padding: 10, fontSize: 42}}>
-          {this.state.text.split(' ').map((word) => word && '🍕').join(' ')}
-        </Text>
+          style={styles.username}
+          placeholder="Username"
+          onChangeText={(text1) => this.setState({text1})}/>
+        <TextInput
+          style={styles.username}
+          placeholder="Password"
+          onChangeText={(text2) => this.setState({text2})}/>
       </View>
+      <Button style={styles.button} title="Login"/>
       </Image>
+
     );
-	}
+    }
 }
 
 const styles = StyleSheet.create({
@@ -45,8 +43,34 @@ const styles = StyleSheet.create({
     flex: 1,
     width: undefined,
     height: undefined,
-    backgroundColor:'transparent',
+    backgroundColor: 'transparent',
     justifyContent: 'center',
     alignItems: 'center',
+
   },
+
+  username: {
+    padding: 10,
+    margin: 10,
+    height: 40, 
+    width: 300, 
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'white'
+  },
+
+  keep: {
+    color: 'white',
+    fontSize: 15,
+    paddingLeft: 1,
+    margin: 10,
+  },
+
+  button: {
+    backgroundColor: 'white',
+    color: 'black',
+
+  },
+
 });
+
