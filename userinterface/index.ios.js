@@ -4,7 +4,7 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import login from './login.js';
+import React, { Component } from 'react-native';
+import login from './login';
 
-AppRegistry.registerComponent('userinterface', () => login);
+React.AppRegistry.registerComponent('userinterface', () => login);
