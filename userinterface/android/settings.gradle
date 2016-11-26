@@ -1,0 +1,3 @@
+rootProject.name = 'userinterface'
+
+include ':app'
