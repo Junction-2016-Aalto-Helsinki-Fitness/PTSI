@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, TextInput, View } from 'react-native';
+import { AppRegistry, Text, TextInput, View, Button, Alert } from 'react-native';
 
 export default class TextHandler extends Component {
   constructor(props) {
     super(props);
-    this.state = {text: ''};
+    this.state = {text: '', response: ''};
   }
 
   getReply(text) {
@@ -16,6 +16,7 @@ export default class TextHandler extends Component {
     }
   }
 
+
   render() {
     return (
       <View style={{padding: 10}}>
@@ -25,8 +26,14 @@ export default class TextHandler extends Component {
           onChangeText={(text) => this.setState({text})}
         />
         <Text style={{padding: 10, fontSize: 42}}>
-          {this.getReply(this.state.text)}
+          {this.getReply(this.state.response)}
         </Text>
+		<Button
+			onPress={() => this.setState({response: this.state.text})} 
+			title="Learn More" 
+			color="#841584" 
+			accessibilityLabel="Learn more about this purple button" 
+		/>
       </View>
     );
   }
