@@ -36,8 +36,9 @@ export default class signup extends Component {
           onChangeText={(text2) => this.setState({text2})}
         />
 		<Button
-			title="Continue" 
-			color="#841584"
+			title="Continue"
+			color="grey"
+			
 		/>		
       </View>
       </Image>
